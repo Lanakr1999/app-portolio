@@ -1,6 +1,6 @@
 
-<div *ngIf="isAboutUsPageVisible">
-
-  <p>about-us works!</p>
-  
+<div class="img-container">
+  <img [src]="randomImgUrl" alt="">
 </div>
+
+<button (click)="getRandomImg()">Change picture</button>
