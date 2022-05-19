@@ -1,0 +1,31 @@
+
+<div class="header">
+  <app-app-header [isMainPageVisible]="isMainPageVisible"
+                  [isAboutUsPageVisible]="isAboutUsPageVisible"
+                  [isContactPageVisible]="isContactPageVisible"
+                  (onMainPageSelected)='showMainPage()'
+                  (onAboutUsPageSelected)='showAboutUsPage()'
+                  (onContactsPageSelected)='showContactsPage()'>
+                </app-app-header>
+</div>
+
+<!-- <div class="header">
+  <div class="menu">
+    <div class="menu-puncts" [class.active]="isMainPageVisible" (click)='showMainPage()'>Главная</div>
+    <div class="menu-puncts" [class.active]="isAboutUsPageVisible" (click)='showAboutUsPage()'>О нас</div>
+    <div class="menu-puncts" [class.active]="isContactPageVisible" (click)='showContactsPage()'>Контакты</div>
+  </div>
+
+</div> -->
+
+<div class="main-layout">
+  <app-main [isMainPageVisible]="isMainPageVisible"></app-main>
+  <app-about-us [isAboutUsPageVisible]="isAboutUsPageVisible"></app-about-us>
+  <app-contacts [isContactPageVisible]="isContactPageVisible"></app-contacts>
+</div>
+
+<div class="footer">
+  <app-app-footer></app-app-footer>
+</div>
+
+
