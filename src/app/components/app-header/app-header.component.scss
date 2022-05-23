@@ -1,0 +1,48 @@
+header{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu{
+  width: 40%;
+  height: 100%;
+  display: flex;
+  margin-left: 25%;
+}
+
+.logo{
+  background: silver;
+  height: 50%;
+  width: 15%;
+}
+
+.menu-puncts{
+  color: silver;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 200ms ease-in-out;
+  &:hover{
+    color: white;
+    cursor: pointer;
+  }
+  &:active{
+    transition: all 50ms ease-in-out;
+    color: lightgray;
+  }
+}
+
+.contacts{
+  color: yellow;
+  margin-left: 10%;
+  &:hover{
+    color: yellow;
+    cursor: default;
+  }
+  &:active{
+    color: silver;
+  }
+}

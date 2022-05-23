@@ -1,0 +1,34 @@
+
+<div class="header">
+  <app-app-header [isMainPageVisible]="isMainPageVisible"
+                  [isAboutUsPageVisible]="isAboutUsPageVisible"
+                  [isContactPageVisible]="isContactPageVisible"
+                  [isPortfolioPageVisible]="isPortfolioPageVisible"
+                  (onMainPageSelected)='showMainPage()'
+                  (onAboutUsPageSelected)='showAboutUsPage()'
+                  (onContactsPageSelected)='showContactsPage()'
+                  (onPortfolioPageSelected)='showPortfolioPage()'>
+                </app-app-header>
+</div>
+
+<!-- <div class="header">
+  <div class="menu">
+    <div class="menu-puncts" [class.active]="isMainPageVisible" (click)='showMainPage()'>Главная</div>
+    <div class="menu-puncts" [class.active]="isAboutUsPageVisible" (click)='showAboutUsPage()'>О нас</div>
+    <div class="menu-puncts" [class.active]="isContactPageVisible" (click)='showContactsPage()'>Контакты</div>
+  </div>
+
+</div> -->
+
+<div class="main-layout">
+  <app-main *ngIf="isMainPageVisible"></app-main>
+  <app-about-us *ngIf="isAboutUsPageVisible"></app-about-us>
+  <app-contacts *ngIf="isContactPageVisible"></app-contacts>
+  <app-portfolio *ngIf="isPortfolioPageVisible"></app-portfolio>
+</div>
+
+<div class="footer">
+  <app-app-footer></app-app-footer>
+</div>
+
+
