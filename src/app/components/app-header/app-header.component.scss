@@ -14,9 +14,22 @@ header{
 }
 
 .logo{
-  background: silver;
-  height: 50%;
-  width: 15%;
+  height: 100%;
+  width: 17%;
+  display: flex;
+
+  p{
+    color: silver;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 35px;
+  }
+
+  img{
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .menu-puncts{
@@ -36,13 +49,15 @@ header{
 }
 
 .contacts{
-  color: yellow;
+  color: goldenrod;
   margin-left: 10%;
+  font-family: Arial;
+  font-weight: normal;
   &:hover{
-    color: yellow;
+    color: goldenrod;
     cursor: default;
   }
   &:active{
-    color: silver;
+    color: goldenrod;
   }
 }
